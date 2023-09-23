@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivo Market</title>
+    <link rel="icon" type="image/png" href="./assets/excited-white-girl-bright-stylish.png" >
+    <link rel="stylesheet" href="./style.css">
+</head>
+<>
+    
+    <!-- HEADER -->
+    <header>      
+            <div class="logo">
+                <p>Rivo</p>
+            </div>
+            <div class="burguer-icon">
+                <img src="./assets/barra-de-menus.png" alt="burguer-icon">
+            </div>
+            <div class="nav-bar">
+                <ul class="ul-links">
+                    <li class="li-links">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="li-links">
+                        <a href="#">SHOP</a>
+                    </li>
+                    <li class="li-links">
+                        <a href="#">FEATURES</a>
+                    </li>
+                    <li class="li-links">
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>    
+            <div class="bag-y-elipse">
+                <div  class="elipse" >
+                    <img src="./assets/Ellipse 1.svg" alt="elipse">
+                </div>
+            </div>   
+                <div class="login-button">
+                    <p>LOGIN</p>
+                </div>
+       
+    </header>
+
+    <!-- FILTRO SELLER  CON SELECT -->
+    <div class="lateral">
+        <div class="caja1-lateral">
+            <p>Buscar por vendedor</p>
+            <section id="select">
+                <select  class="select-box" name="select">
+                            <option value="Zara">Zara</option>
+                            <option value="Primark">Primark</option>
+                            <option value="Mango">Mango</option>
+                            <option value="BCN">BCN</option>
+                            <option value="V">TODOS</option>
+                </select>
+            </section>
+        </div>
+                <!-- FILTRO PRECIO -->
+        <div class="caja2-lateral">
+            <p>Buscar por precio</p>
+                    <form id="search-button">
+                        <input type="number" id="miInputNumber" min="15">
+                        <button>Buscar</button>
+                    </form>
+                    <!-- BOTÓN LIMPIAR FILTROS -->
+                    <button id="filtrar">LIMPIAR FILTROS</button>
+        </div>
+        
+    </div>    
+            
+            <!-- MAIN -->
+    <main>
+        <!-- PRODUCTS-CARDS -->
+        <section id="products-cards"></section>
+    </main>
+        
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-column-1">
+            <h2 class="footer-h2">
+                <p>Rivo</p>
+            </h2>
+            <h4 class="footer-column-1-h4">
+                <p>Social Media</p>
+            </h4>
+            <div class="footer-socialMedia">
+
+                <div class="socialMedia-img">
+                    <img src="./assets/Facebook.svg" alt="facebook img">
+                </div>
+                <div class="socialMedia-img">
+                    <img src="./assets/Instagram.svg" alt="Instagram img">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-column-2">
+            <div class="footer-column-2-shop">
+                <ul>
+                    <li>SHOP</li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Releases</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-2-company">
+                <ul>
+                    <li>COMPANY</li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-column-3">
+            <h3>Stay up to date</h3>
+            <div class="input">
+                <p>Enter your email</p>
+                <div class="submit">
+                    SUBMIT
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- SCRIPT -->
+    <script src="./main.js"></script>
+</body>
+</html>
