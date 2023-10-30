@@ -535,8 +535,7 @@ footer .div-footer{
         line-height: normal;
         position: absolute;
         top: 35px;
-        left:80px;
-       
+        left:80px;    
         /* border: 1px solid black; */
     }
     .burguer-icon{
@@ -703,8 +702,8 @@ main{
     flex-wrap:wrap;
     width: 100%;
     height: 100%;
-    margin-top:0px;
-    /* border: 1px solid yellow; */
+    margin-top:30px;
+    border: 1px solid yellow;
 }
 #products-cards{
     display: flex;
@@ -774,7 +773,7 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     color:var(--text);
-    font-size: 14px;
+    font-size: 12px;
     align-items: center;
     /* border: 1px solid red; */
 }
