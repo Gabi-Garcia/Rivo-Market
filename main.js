@@ -127,20 +127,10 @@ const setupProductList = () => {
                 sellerFiltered.push(product);
                 productsCards.innerHTML += getProductTemplate(
                     product
-                    // product.name,
-                    // product.price,
-                    // product.seller,
-                    // product.stars,
-                    // product.image
                     )
                 }else if(select.value === "V"){
                     productsCards.innerHTML += getProductTemplate(
                         product
-                        // product.name,
-                        // product.price,
-                        // product.seller,
-                        // product.stars,
-                        // product.image
                         )
                  console.log('Soy V')
                 }

@@ -38,8 +38,8 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height:13%;
-    padding:7%;
+    height:100px;
+    padding:25px;
     background:var(--primary);
     position: fixed;
     /* border: 1px solid red; */
@@ -121,82 +121,89 @@ padding: 10px;
 /******LATERAL*********/
 .lateral{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     padding-top:0%;
-    padding:4px;
-    width:28%;
-    height:35%;
-    margin-left:1%; 
-    margin-top:15%;
+    padding:0px;
+    width:100%;
+    height:100px;
+    margin-left:0; 
+    margin-top:80px;
     position: fixed;
-    background-color: rgb(240, 233, 233);
+    background-color: var(--primary);
     align-items: center;
-    justify-content: center;
-    border:2px solid var(--primary); 
+    justify-content: space-around;
+    /* border: 1px solid blue; */
 } 
 .caja1-lateral{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
     text-align: center;
     align-items: center;
-    width:100%;
-    margin-left:0px;
-    height:20%;
+    justify-content: center;
+    width:40%;
+    height:50%;
+    margin-top:0px;
+    padding-top:0px;
+    margin-bottom: 23px;
     /* border: 1px solid green; */
 }
 .caja2-lateral{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:100%;
-    height:80%;
+    align-items: center;
+    /* justify-content: space-around; */
+    width:40%;
+    height:70%;
     margin-top:0px;
     padding-top:0px;
     margin-left:0px;
     /* border: 1px solid rgb(128, 0, 111); */
 }
 .lateral .caja1-lateral p{
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    color: rgb(90, 78, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:400;
+    align-items: center;
+    /* border:2px solid black; */
+} 
+.lateral .caja2-lateral p{
+    font-size: 0.9rem;
     color: rgb(90, 78, 78);
     font-family: Arial, Helvetica, sans-serif;
     font-weight:400;
     height: 25px;
-    margin-top:5px;
+    margin-top:0px;
     margin-left: 0px;
     align-items: center;
-    /* border:2px solid black; */
-    border-radius: 5px;
-} 
-.lateral .caja2-lateral p{
-    font-size:0.9em;
-    color: rgb(95, 94, 94);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:400;
-    height: 25px;
-    margin-top:20px;
-    align-items: center;
-    /* border: 2px solid black; */
-    border-radius: 5px;
-} 
-
+    /* border:1px solid black; */
+}
 /*SELECT*/
-.select-box{
-    width:25px;
-    margin-left:35%;
-    margin-top:0px;
+#select{
+    width: 100%;
     border-radius: 5px;
+}
+.select-box{
+    width: 100px;
+    margin-top:22px;
+    height: 25px;
+    background-color:var(--primary);
     cursor: pointer;
-    background-color: rgb(172, 228, 172);
-    border: 3px solid rgb(32, 100, 49);
+    text-align: center;
+    border: 1px solid black;
+} 
+.select-box > .option{
+    border: none;
 }
 #search-button{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top:0px;
+    justify-content: center;
     width: 100%;
     height:20%;
     /* border: 1px solid yellow; */
@@ -204,14 +211,14 @@ padding: 10px;
 #miInputNumber{
     margin-top: 10px;
     margin-left: 5px;
-    width:15%;
+    width:20%;
     height:30px;
     text-align: center;
     border-radius: 5px;
-    border: 3px solid green;
+    border: 1px solid green;
 }
 #search-button button{
-    width:25%;
+    width:20%;
     height: 30px;
     margin-top: 10px;
     margin-left: 20px;
@@ -219,16 +226,18 @@ padding: 10px;
     font-weight: 700;
     text-align: center;
     cursor: pointer;
-    border:3px solid black ;
+    border:1px solid black ;
     border-radius: 5px;
 }
  #filtrar{
-   margin-left:15px;
-   margin-top:30px;
-   width:50%;
-   height: 20px;
-   font-size: x-small;
-   border-radius:5px;
+   /* width:10%; */
+   font-size:0.6rem;
+   padding:15px;
+   align-items: center;
+   text-align: center;
+   cursor: pointer;
+   margin-top:5px;
+   /* border: 1px solid yellow; */
 } 
 
 /*********MAIN*********/
@@ -236,7 +245,7 @@ main{
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
-    margin-top:10%;
+    margin-top:180px;
     width: 100%;
     height: 100%;
     justify-content: space-between ;
@@ -246,43 +255,35 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width:70%;
+    width:100%;
     height: 100%;
     gap:0px;
     justify-content: center;
-    margin-left:30%;
-    margin-top:5%;
-    background-color: rgb(240, 233, 233);
-    padding: 5%;
-    border: 2px solid var(--primary); 
+    margin-left:0%;
+    margin-top:0%;
+    padding: 0;
 }
 .card{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:40%;
+    width:35%;
     height:20%;
     align-items: center;
     justify-content: center;
     margin-left: 25px;
     margin-top: 20px;
     padding-top: 5px;
-    border: 2px solid var(--primary);
-    cursor: pointer;
+    background-color: rgb(240, 233, 233);
+    border: 1px solid var(--primary);
 }
 /*CARD HOVER*/
 .card:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:45%;
-    height:20%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 25px;
-    margin-top: 20px;
-    padding-top: 5px;
-    border: 2px solid var(--text);
+    width:35%;
+    border: 1px solid var(--text);
     cursor: pointer;
 }
 .card .image{
@@ -319,12 +320,14 @@ main{
 
 /*FOOTER*****/
 footer{
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: var(--secondary);
-    margin-top:10%;
+    margin-top:100px;
+    padding: 43px;
     justify-content: space-around;
     /* border: 1px solid red; */
 }
@@ -470,7 +473,7 @@ footer .div-footer{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-top:40px;
+    margin-top:20px;
     padding:15px;
     border-top:1px solid white;
   }
@@ -486,8 +489,8 @@ footer .div-footer{
     flex-wrap: wrap;
   }
   footer .div-footer ul li a .imgFooter{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
   }
   footer .div-footer ul li a .imgFooter img{
     width:100%;
@@ -496,10 +499,10 @@ footer .div-footer{
   }
   footer .div-footer p{
     margin: auto;
-    margin-top:15px;
+    margin-top:5px;
     display: flex;
     border-radius: 5px;
-    padding:1%;
+    padding:0;
     font-size: 1.2rem;
   }
 }
@@ -510,6 +513,7 @@ footer .div-footer{
 /*****HEADER******/
    body{
     position: relative;
+    /* border: 2px solid var(--text); */
    }
     header{
         width: 100%;
@@ -521,7 +525,6 @@ footer .div-footer{
         padding: 50px;
         background: #C2EFD4;
         position: fixed;
-        border: 2px solid gray; 
     }
     .nav-bar{
         display: none;
@@ -552,12 +555,6 @@ footer .div-footer{
        height: 100%;
     }
     .bag-y-elipse{
-        width:30px;
-        height: 30px;
-        background-image:url("./assets/fi-rr-shopping-bag-add.svg");
-        position: absolute;
-        top: 35px;
-        right:50px;
         display: none;
     }
     .login-button{
@@ -579,122 +576,127 @@ footer .div-footer{
             text-transform: uppercase;
         }
 
-/****** VA ARRIBA, FILTROS*********/
+/******LATERAL*********/
 .lateral{
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content:space-around;
-    align-items: flex-start;
-    padding-top:5px; 
+    padding:10px;
     width:100%;
-    height:35%;
-    margin-left:0px; 
-    margin-top:100px; 
+    margin-left:0; 
+    margin-top:70px;
     position: fixed;
-    background-color: rgb(240, 233, 233);
-    border: 2px solid gray; 
+    background-color: var(--primary);
+    gap: 0px;
+    /* border: 1px solid blue; */
 } 
 .caja1-lateral{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content:space-between; */
-    /* text-align: center; */
-    align-items: center;
-    width:100%;
-    margin-left:0px;
-    margin-top:0px;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+    width:50%;
     height:20%;
-    padding:0px;
+    margin-top:10px;
+    padding-top:0px;
     /* border: 1px solid green; */
 }
-.lateral .caja1-lateral p{
-   font-size:0.8rem;
-   color: rgb(48, 46, 46);
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 500;
-   width:80%;
-   height: 20px;
-   margin-top:0px;
-   margin-left:10px;
-   /* text-align: center; */
-   align-items: center;
-   border-radius: 0px;
-   /* border: 1px solid black; */
-} 
 .caja2-lateral{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:100%;
-    height:80%;
-    margin-top:0px;
-    margin-left:0px;
-    padding: 10px;
+    align-items: center;
+    width:50%;
+    height:20%;
+    margin-top:10px;
+    padding-top:0px;
+    margin-left:5px;
     /* border: 1px solid rgb(128, 0, 111); */
 }
-.lateral .caja2-lateral p{
-    font-size:0.8rem;
-    color: rgb(48, 46, 46);
+.lateral .caja1-lateral p{
+    font-size: 0.9rem;
+    color: rgb(90, 78, 78);
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    width: 100%;
-    height: 20px;
+    font-weight:400;
+    align-items: center;
+    /* border:2px solid black; */
+} 
+.lateral .caja2-lateral p{
+    font-size: 0.9rem;
+    color: rgb(90, 78, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:400;
+    height: 25px;
     margin-top:0px;
     margin-left: 0px;
-    /* text-align: center; */
-    /* align-items: center; */
-    /* border: 1px solid rgb(20, 40, 212); */
-    border-radius: 0px;
-} 
+    align-items: center;
+    /* border:1px solid black; */
+}
 /*SELECT*/
-.select-box{
-    width: 20px;
-    height: 20px;
-    margin-left:0px;
-    margin-top:0px;
+#select{
+    width: 100%;
     border-radius: 5px;
+}
+.select-box{
+    width: 100px;
+    margin-top:22px;
+    height: 25px;
+    background-color:var(--primary);
     cursor: pointer;
-    background-color: rgb(172, 228, 172);
-    border: 2px solid rgb(32, 100, 49);
+    text-align: center;
+    border: 1px solid black;
+} 
+.select-box > .option{
+    border: none;
 }
 #search-button{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top:10px;
-    margin-left: 12px;
-    width: 80%;
-    height:15%;
+    margin-top:0px;
+    justify-content: center;
+    width: 100%;
+    height:20%;
     /* border: 1px solid yellow; */
 }
 #miInputNumber{
-    margin-top:0px;
-    width:25%;
+    margin-top: 10px;
+    margin-left: 5px;
+    width:20%;
     height:30px;
     text-align: center;
     border-radius: 5px;
-    border: 2px solid green;
+    border: 1px solid green;
 }
-#search-button button, #filtrar{
-    width:50%;
+#search-button button{
+    /* width:20%; */
     height: 30px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-align: center;
     cursor: pointer;
-    border:2px solid black ;
+    padding: 10px;
+    border:1px solid black ;
     border-radius: 5px;
 }
  #filtrar{
-   margin-left:12px;
-   margin-top:30px;
-   width:90%;
-   border-radius:5px;
+   position: fixed;
+   width: 33%;
+   font-size:0.6rem;
+   padding:10px;
+   margin-left: 60%;
+   margin-top: 110px;
+   align-items: center; 
+   text-align: center;
+   cursor: pointer;
+   /* margin-top:5px; */
+   /* border: 1px solid yellow; */
 } 
+
 /*********MAIN*********/
 main{
     display: flex;
@@ -702,7 +704,8 @@ main{
     flex-wrap:wrap;
     width: 100%;
     height: 100%;
-    margin-top:35px;
+    margin-top:250px;
+    /* border:1px solid yellow */
 }
 #products-cards{
     display: flex;
@@ -713,10 +716,9 @@ main{
     gap:5px;
     justify-content: center;
     margin-left:0px;
-    margin-top:290px;
-    background-color: rgb(240, 233, 233);
+    margin-top:0px;
     padding: 5%;
-    border: 2px solid gray; 
+    /* border: 2px solid gray;   */
 }
 .card{
     display: flex;
@@ -729,7 +731,8 @@ main{
     margin-left: 25px;
     margin-top: 20px;
     padding-top: 5px;
-    border: 2px solid rgb(112, 212, 112);
+    background-color: rgb(240, 233, 233);
+    border: 1px solid rgb(112, 212, 112);
 }
 /*CARD HOVER*/
 .card:hover{
@@ -779,15 +782,15 @@ main{
 /*****FOOTER************/
 footer{
     width: 100%;
+    padding: 10px;
     /* height:200px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #224F34;
-    margin-top: 20px;
+    margin-top: 0px;
     /* justify-content: space-between; */
     /* border: 1px solid red; */
-    border: 2px solid gray; 
 }
 .footer-column-1{
     display: flex;
@@ -892,14 +895,13 @@ footer{
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+    padding:2px;
     width:50%;
     text-align: center;
     border: 1px solid wheat;
 }
 .footer-column-3 .input{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     text-align: center;
     align-items: center;
     width:90%;
@@ -930,11 +932,10 @@ footer{
     line-height: normal;
     text-transform: uppercase;
     background: #A3F3BE;
-    padding: 5px;
+    padding: 7px;
     border-radius: 3px;
-    margin-top:20%;
-    margin-left:20%;
-    border: 1px solid red;
+    margin-top:20px;
+    /* border: 1px solid red; */
 }
 /*div-footer**/
 /****footer****/
@@ -961,8 +962,8 @@ footer .div-footer{
     flex-wrap: wrap;
   }
   footer .div-footer ul li a .imgFooter{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
   }
   footer .div-footer ul li a .imgFooter img{
     width:100%;
@@ -971,10 +972,10 @@ footer .div-footer{
   }
   footer .div-footer p{
     margin: auto;
-    margin-top:15px;
+    margin-top:5px;
     display: flex;
     border-radius: 5px;
-    padding:1%;
+    padding:0;
     font-size: 1.2rem;
   }
 }

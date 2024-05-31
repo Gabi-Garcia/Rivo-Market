@@ -43,19 +43,7 @@
     </header>
     <!-- FILTRO SELLER  CON SELECT -->
     <div class="lateral">
-        <div class="caja1-lateral">
-            <p>Buscar por marca</p>
-            <section id="select">
-                <select  class="select-box" name="select">
-                            <option value="Zara">Zara</option>
-                            <option value="Primark">Primark</option>
-                            <option value="Mango">Mango</option>
-                            <option value="BCN">BCN</option>
-                            <option value="V">TODOS</option>
-                </select>
-            </section>
-        </div>
-                <!-- FILTRO PRECIO -->
+        <!-- FILTRO PRECIO -->
         <div class="caja2-lateral">
             <p>Buscar por precio</p>
                     <form id="search-button">
@@ -63,16 +51,30 @@
                         <button>Buscar</button>
                     </form>
                     <!-- BOTÓN LIMPIAR FILTROS -->
-                    <button id="filtrar">LIMPIAR FILTROS</button>
-        </div>
-        
-    </div>            
-    <!-- MAIN -->
-    <main>
-    <!-- PRODUCTS-CARDS -->
-    <section id="products-cards"></section>
-    </main>    
-    <!-- FOOTER -->
+                </div>
+
+                <button id="filtrar">LIMPIAR FILTROS</button>
+                
+                <div class="caja1-lateral">
+                    <p>Buscar por marca</p>
+                    <section id="select">
+                        <select  class="select-box" name="select">
+                                    <option class="option" value="V">TODOS</option>
+                                    <option value="Zara">Zara</option>
+                                    <option value="Primark">Primark</option>
+                                    <option value="Mango">Mango</option>
+                                    <option value="BCN">BCN</option>
+                        </select>
+                    </section>
+                </div>
+                
+            </div>            
+            <!-- MAIN -->
+            <main>
+                <!-- PRODUCTS-CARDS -->
+                <section id="products-cards"></section>
+            </main>    
+            <!-- FOOTER -->
     <footer>
         <div class="footer-column-1">
             <h2 class="footer-h2">
@@ -147,7 +149,7 @@
                     </a>
                   </li>      
                 </ul>
-                <p>©️Creado por Gabi-Garcia</p>
+                <p>Creado por Gabi-Garcia</p>
         </div>
 
     </footer>
