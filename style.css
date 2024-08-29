@@ -22,15 +22,16 @@ body{
     flex-wrap: wrap;
     justify-content:space-between;
     position: relative;
-    /* border: 2px solid green; */
-}
-@media screen and (min-width:768px)and (max-width:1500px){
-/***********HEADER*******/
-body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* border: 2px solid green; */
 }
+
+/*********************MEDIA QUERY DESKTOP, TABLET****************/
+@media screen and (min-width:768px)and (max-width:1500px){
+/***********HEADER*******/
+
 header{
     display: flex;
     flex-direction: row;
@@ -38,8 +39,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height:100px;
-    padding:25px;
+    padding:30px;
     background:var(--primary);
     position: fixed;
     /* border: 1px solid red; */
@@ -47,10 +47,9 @@ header{
 .logo{
     color:var(--secondary);
     font-family: Elephant;
-    font-size: 40px;
-    font-style: normal;
+    font-size: 3rem;
     font-weight: 900;
-    line-height: normal;
+    margin-left: 30px;
     /* border: 1px solid black; */
 }
 .burguer-icon{
@@ -104,6 +103,7 @@ header{
     margin-left: 13px;
 }
 .login-button{
+    margin-right: 30px;
 cursor: pointer;
 border-radius: 3px;
 border: 2px solid var(--secondary);
@@ -123,12 +123,9 @@ padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top:0%;
-    padding:0px;
     width:100%;
-    height:100px;
-    margin-left:0; 
-    margin-top:80px;
+    padding: 30px;
+    margin-top:100px;
     position: fixed;
     background-color: var(--primary);
     align-items: center;
@@ -142,11 +139,6 @@ padding: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    width:40%;
-    height:50%;
-    margin-top:0px;
-    padding-top:0px;
-    margin-bottom: 23px;
     /* border: 1px solid green; */
 }
 .caja2-lateral{
@@ -154,16 +146,10 @@ padding: 10px;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: space-around; */
-    width:40%;
-    height:70%;
-    margin-top:0px;
-    padding-top:0px;
-    margin-left:0px;
     /* border: 1px solid rgb(128, 0, 111); */
 }
 .lateral .caja1-lateral p{
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgb(90, 78, 78);
     font-family: Arial, Helvetica, sans-serif;
     font-weight:400;
@@ -171,7 +157,7 @@ padding: 10px;
     /* border:2px solid black; */
 } 
 .lateral .caja2-lateral p{
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgb(90, 78, 78);
     font-family: Arial, Helvetica, sans-serif;
     font-weight:400;
@@ -188,16 +174,16 @@ padding: 10px;
 }
 .select-box{
     width: 100px;
-    margin-top:22px;
+    margin-top:15px;
     height: 25px;
     background-color:var(--primary);
     cursor: pointer;
     text-align: center;
     border: 1px solid black;
 } 
-.select-box > .option{
+/* .select-box > .option{
     border: none;
-}
+} */
 #search-button{
     display: flex;
     flex-direction: row;
@@ -218,16 +204,17 @@ padding: 10px;
     border: 1px solid green;
 }
 #search-button button{
-    width:20%;
+    width:100px;
     height: 30px;
     margin-top: 10px;
     margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+ 
     text-align: center;
     cursor: pointer;
-    border:1px solid black ;
     border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    border:1px solid black;
 }
  #filtrar{
    /* width:10%; */
@@ -245,7 +232,7 @@ main{
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
-    margin-top:180px;
+    margin-top:250px;
     width: 100%;
     height: 100%;
     justify-content: space-between ;
@@ -477,25 +464,10 @@ footer .div-footer{
     padding:15px;
     border-top:1px solid white;
   }
-  footer .div-footer ul{
-    padding:10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  footer .div-footer li{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  footer .div-footer ul li a .imgFooter{
-    width:20px;
-    height:20px;
-  }
-  footer .div-footer ul li a .imgFooter img{
-    width:100%;
-    height:100%;
-    border-radius: 5px;
+  footer .div-footer a{
+    text-decoration: none;
+    margin: auto;
+    /* border: 1px solid blue; */
   }
   footer .div-footer p{
     margin: auto;
@@ -503,7 +475,9 @@ footer .div-footer{
     display: flex;
     border-radius: 5px;
     padding:0;
-    font-size: 1.2rem;
+    color: var(--fifth);
+    font-size: 1rem;
+    cursor: pointer;
   }
 }
 
@@ -511,10 +485,6 @@ footer .div-footer{
 /*********************MEDIA QUERY MOBILE****************/
 @media screen and (min-width:320px) and (max-width:767px){
 /*****HEADER******/
-   body{
-    position: relative;
-    /* border: 2px solid var(--text); */
-   }
     header{
         width: 100%;
         display: flex;
@@ -532,7 +502,7 @@ footer .div-footer{
     .logo{
         color: #224F34;
         font-family: Elephant;
-        font-size: 25px;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 900;
         line-height: normal;
@@ -544,7 +514,7 @@ footer .div-footer{
     .burguer-icon{
         display: block;
         width: 40px;
-        height: 30px;
+        height: 40px;
         position: absolute;
         top: 35px;
         left: 20px; 
@@ -564,59 +534,61 @@ footer .div-footer{
         padding: 5px;
         position: absolute;
         top: 35px;
-        right:60px; 
+        right:10%; 
+        width: 80px;
+        height: 35px;
+        text-align: center;
         }
         .login-button p{
+            align-items: center;
+            text-align: center;
             color: #224F34;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 10px;
+            font-size:1rem;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
             text-transform: uppercase;
+            padding-top: 5px;
+            /* border: 1px solid yellow; */
         }
 
 /******LATERAL*********/
 .lateral{
     display: flex;
-    flex-direction: column;
+    flex-direction:column-reverse;
     flex-wrap: wrap;
     padding:10px;
     width:100%;
-    margin-left:0; 
-    margin-top:70px;
+    margin-top:75px;
     position: fixed;
+    height: 30%;
     background-color: var(--primary);
-    gap: 0px;
     /* border: 1px solid blue; */
 } 
 .caja1-lateral{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    /* align-items: center; */
     justify-content: center;
-    width:50%;
-    height:20%;
-    margin-top:10px;
-    padding-top:0px;
+    width: 30%;
+    margin-top:0px;
+    height: 120px;
     /* border: 1px solid green; */
 }
 .caja2-lateral{
     display: flex;
+    height: 120px;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    width:50%;
-    height:20%;
-    margin-top:10px;
-    padding-top:0px;
-    margin-left:5px;
+    width: 30%;
+    margin-left: 5%;
     /* border: 1px solid rgb(128, 0, 111); */
 }
 .lateral .caja1-lateral p{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: rgb(90, 78, 78);
     font-family: Arial, Helvetica, sans-serif;
     font-weight:400;
@@ -624,7 +596,7 @@ footer .div-footer{
     /* border:2px solid black; */
 } 
 .lateral .caja2-lateral p{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: rgb(90, 78, 78);
     font-family: Arial, Helvetica, sans-serif;
     font-weight:400;
@@ -632,69 +604,76 @@ footer .div-footer{
     margin-top:0px;
     margin-left: 0px;
     align-items: center;
+    text-align: center;
     /* border:1px solid black; */
 }
 /*SELECT*/
 #select{
     width: 100%;
     border-radius: 5px;
+    /* border: 1px solid green; */
 }
 .select-box{
-    width: 100px;
-    margin-top:22px;
-    height: 25px;
+    width: 90%;
+    margin-bottom: 55px;
+    height: 30px;
     background-color:var(--primary);
     cursor: pointer;
     text-align: center;
+
     border: 1px solid black;
+    /* border: 1px solid red; */
 } 
 .select-box > .option{
     border: none;
+    
 }
 #search-button{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin-top:0px;
     justify-content: center;
     width: 100%;
-    height:20%;
     /* border: 1px solid yellow; */
 }
 #miInputNumber{
-    margin-top: 10px;
-    margin-left: 5px;
-    width:20%;
+    width:45%;
     height:30px;
     text-align: center;
     border-radius: 5px;
+    margin: auto;
     border: 1px solid green;
 }
 #search-button button{
-    /* width:20%; */
+    width:60%;
     height: 30px;
-    margin-top: 10px;
-    margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
     text-align: center;
     cursor: pointer;
-    padding: 10px;
-    border:1px solid black ;
+    padding: 0px;
+    font-size: 0.7rem;
+    margin: auto;
+    margin-top: 10px;
+    border:2px solid black ;
     border-radius: 5px;
+  
 }
  #filtrar{
-   position: fixed;
-   width: 33%;
-   font-size:0.6rem;
+   display: flex;
+   flex-wrap: wrap;
+   height: 30px;
+   font-size:0.5rem;
    padding:10px;
-   margin-left: 60%;
-   margin-top: 110px;
+   width: 95px;
    align-items: center; 
    text-align: center;
    cursor: pointer;
-   /* margin-top:5px; */
+   margin: auto;
+   margin-top: 50px;
+   margin-left: 0px;
+   margin-right: 5px;
    /* border: 1px solid yellow; */
+  
 } 
 
 /*********MAIN*********/
@@ -940,35 +919,19 @@ footer{
 /*div-footer**/
 /****footer****/
 footer .div-footer{
-    background-color: #224F34;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-top:10px;
+    margin-top:20px;
     padding:15px;
     border-top:1px solid white;
   }
-  footer .div-footer ul{
-    padding:10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  footer .div-footer li{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  footer .div-footer ul li a .imgFooter{
-    width:20px;
-    height:20px;
-  }
-  footer .div-footer ul li a .imgFooter img{
-    width:100%;
-    height:100%;
-    border-radius: 5px;
+  footer .div-footer a{
+    text-decoration: none;
+    margin: auto;
+    /* border: 1px solid blue; */
   }
   footer .div-footer p{
     margin: auto;
@@ -976,6 +939,8 @@ footer .div-footer{
     display: flex;
     border-radius: 5px;
     padding:0;
-    font-size: 1.2rem;
+    color: var(--fifth);
+    font-size: 1rem;
+    cursor: pointer;
   }
 }
